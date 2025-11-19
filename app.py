@@ -8,10 +8,13 @@ os.makedirs(UPLOAD_FOLDER,exist_ok=True)
 from utils.document_loader import load_documents
 from utils.text_splitter import splits_into_chunks
 
-
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/upload-documents')
+def upload_documents():
+    return render_template('upload_documents.html')
 
 # @app.route('/upload',methods=['POST'])
 # def upload_file():

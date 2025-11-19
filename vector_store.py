@@ -20,7 +20,7 @@ def store_in_chunks(chunks):
     except Exception as e:
         print("Warning: Could not fetch existing documents:", e)
         existing_texts = set()
-
+    
     ids = []
     texts = []
     embeddings = []
