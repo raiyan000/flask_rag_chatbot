@@ -31,6 +31,23 @@ This project allows users to upload documents (TXT/PDF etc.), which are then chu
 
 ---
 
+🔄 RAG Pipeline — Architecture Diagram
+
+graph TD;
+    A[User Question] --> B[Flask Backend /query]
+    B --> C[Encode Query with SentenceTransformer]
+    C --> D[ChromaDB Vector Search]
+    D --> E[Relevant Chunks Retrieved]
+    E --> F[Prompt Builder]
+    F --> G[Groq LLM (Llama 3.1 Instant)]
+    G --> H[Return Final Answer]
+
+    subgraph Storage
+        I[TXT Files] --> J[Chunking]
+        J --> K[Embeddings]
+        K --> L[ChromaDB Persistent Vector DB]
+    end
+
 # 🧩 Challenges Faced & Solutions
 
 ## **1. ChromaDB Was Empty on Every Server Restart**
