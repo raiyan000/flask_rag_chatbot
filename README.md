@@ -33,6 +33,8 @@ This project allows users to upload documents (TXT/PDF etc.), which are then chu
 
 ![image alt](https://github.com/raiyan000/flask_rag_chatbot/blob/9e7972adb5e5997019604bb63e6266a4d2a9d544/ChatbotUI.PNG
 )
+![image alt](https://github.com/raiyan000/flask_rag_chatbot/blob/dfcd654f34665b92f6348844bb97d8947206c035/uploads_documents.PNG
+)
 
 🔄 RAG Pipeline — Architecture Diagram
 
